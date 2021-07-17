@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="h22-J4-HCt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EkU-gw-CoG">
+                                <rect key="frame" x="80.5" y="248.5" width="214.5" height="170.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your sign in method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLW-I0-raK">
+                                        <rect key="frame" x="0.0" y="0.0" width="214.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6Z-iR-AVP" userLabel="FirstButton">
+                                        <rect key="frame" x="0.0" y="40.5" width="214.5" height="30"/>
+                                        <state key="normal" title="Sign in with Facebook">
+                                            <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsX-VW-fPc" userLabel="SecondButton">
+                                        <rect key="frame" x="0.0" y="90.5" width="214.5" height="30"/>
+                                        <state key="normal" title="Sign in with Google">
+                                            <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqq-bx-4SW" userLabel="ThirdButton">
+                                        <rect key="frame" x="0.0" y="140.5" width="214.5" height="30"/>
+                                        <state key="normal" title="Not sign in">
+                                            <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Khoa first app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3x4-ma-gSI">
+                                <rect key="frame" x="90" y="172.5" width="195" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="h22-J4-HCt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3CK-c1-YaS"/>
+                            <constraint firstAttribute="bottom" secondItem="h22-J4-HCt" secondAttribute="bottom" id="HD0-3K-BBh"/>
+                            <constraint firstAttribute="trailing" secondItem="h22-J4-HCt" secondAttribute="trailing" id="T9v-Gb-BrG"/>
+                            <constraint firstItem="EkU-gw-CoG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yy5-OO-ztv"/>
+                            <constraint firstItem="EkU-gw-CoG" firstAttribute="top" secondItem="3x4-ma-gSI" secondAttribute="bottom" constant="40" id="e0M-me-gL6"/>
+                            <constraint firstItem="h22-J4-HCt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="guq-oa-sBu"/>
+                            <constraint firstItem="3x4-ma-gSI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sOC-PV-OXW"/>
+                            <constraint firstItem="EkU-gw-CoG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="t2L-Jh-31E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="113.79310344827587"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="750" height="1334"/>
+    </resources>
+</document>
